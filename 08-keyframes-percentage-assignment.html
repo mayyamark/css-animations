@@ -1,0 +1,51 @@
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>Flexbox demo</title>
+      <style>
+        .transform_animation {
+          width: 200px;
+          height: 100px;
+          margin-top:200px;
+          background-color: black;
+          animation-name: skew_animation;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+ 
+        @keyframes skew_animation {
+          0% {
+            transform: rotate(0deg);
+            background-color: orange;
+          }
+          16% {
+            transform: rotate(72deg);
+            background-color: yellow;
+          }
+          33% {
+            transform: rotate(144deg);
+            background-color: green;
+          }
+          50% {
+            transform: rotate(216deg);
+            background-color: blue;
+          }
+          66% {
+            transform: rotate(288deg);
+            background-color: purple;
+          }
+          100% {
+            transform: rotate(360deg);
+            background-color: red;
+          }
+        }
+      </style>
+    </head>
+    <body>
+        <br>
+        <center>
+            <div class = "transform_animation"></div>
+        </center>
+    </body>
+</html>
